@@ -45,13 +45,17 @@ public class Interfaz {
     // ─── Menú Principal ───────────────────────────────────────────────────────
 
     public static void mostrarMenu(Jugador jugador) {
-        System.out.println();
-        System.out.println(Colores.AMARILLO + "  ╔════════════════════════════════════╗" + Colores.RESET);
-        System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + Colores.NEGRITA
-                + "          MENÚ PRINCIPAL             " + Colores.AMARILLO + "║" + Colores.RESET);
-        System.out.println(Colores.AMARILLO + "  ╠════════════════════════════════════╣" + Colores.RESET);
-        System.out.printf(Colores.AMARILLO + "  ║" + Colores.RESET + "  Jugador: %-22s" + Colores.AMARILLO + "║%n"
-                + Colores.RESET, jugador.getNombre());
+                public static void mostrarMenu(Jugador jugador) {
+                System.out.println();
+                System.out.println(Colores.AMARILLO + "  ╔════════════════════════════════════╗" + Colores.RESET);
+                System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + Colores.NEGRITA
+                                + "          MENÚ PRINCIPAL            " + Colores.AMARILLO + "║" + Colores.RESET);
+                System.out.println(Colores.AMARILLO + "  ╠════════════════════════════════════╣" + Colores.RESET);
+                System.out.printf(
+                                Colores.AMARILLO + "  ║" + Colores.RESET + "  Jugador: %-22s" + Colores.AMARILLO
+                                                + "   ║%n"
+                                                + Colores.RESET,
+                                jugador.getNombre());
         System.out.printf(
                 Colores.AMARILLO + "  ║" + Colores.RESET + "   Saldo:   " + Colores.VERDE_BRILLANTE + "%-22s"
                         + Colores.AMARILLO + "║%n" + Colores.RESET,
