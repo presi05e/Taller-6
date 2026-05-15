@@ -70,19 +70,19 @@ public class Interfaz {
                                         jugador.getTurnosBono() + " turno(s) activo(s)");
                 }
         System.out.println(Colores.AMARILLO + "  ╠════════════════════════════════════╣" + Colores.RESET);
-        System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + "  1 Apostar                         "
-                + Colores.AMARILLO + "║" + Colores.RESET);
-        System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + "  2  Ver Saldo y Estadísticas        "
-                + Colores.AMARILLO + "║" + Colores.RESET);
-        System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + "  3  Ranking de Jugadores            "
-                + Colores.AMARILLO + "║" + Colores.RESET);
-        System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + "  4  Tabla de Premios                "
-                + Colores.AMARILLO + "║" + Colores.RESET);
-        System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + "  5 Salir                           "
-                + Colores.AMARILLO + "║" + Colores.RESET);
-        System.out.println(Colores.AMARILLO + "  ╚════════════════════════════════════╝" + Colores.RESET);
-        System.out.print(Colores.CIAN + "   Elige una opción: " + Colores.RESET);
-    }
+                System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + "  1 Apostar                         "
+                                + Colores.AMARILLO + "║" + Colores.RESET);
+                System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + "  2  Ver Saldo y Estadísticas       "
+                                + Colores.AMARILLO + "║" + Colores.RESET);
+                System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + "  3  Ranking de Jugadores           "
+                                + Colores.AMARILLO + "║" + Colores.RESET);
+                System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + "  4  Tabla de Premios               "
+                                + Colores.AMARILLO + "║" + Colores.RESET);
+                System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + "  5 Salir                           "
+                                + Colores.AMARILLO + "║" + Colores.RESET);
+                System.out.println(Colores.AMARILLO + "  ╚════════════════════════════════════╝" + Colores.RESET);
+                System.out.print(Colores.CIAN + "   Elige una opción: " + Colores.RESET);
+        }
 
     // ─── Estadísticas del Jugador ─────────────────────────────────────────────
 
