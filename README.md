@@ -200,7 +200,7 @@ git clone https://github.com/tu-usuario/proyecto_final_arcade.git
 
 ## Diapositivas
 >A continuación se encontraran las Diapositivas que contiene la exposición y la en esta la explicación oral a detalle del proyecto: 
->[Diapositivas](https://canva.link/ijonp98gpf3f5re)
+>[Diapositivas](https://canva.link/2jufs9rh99gq34m)
 
 Este proyecto representa la integración de múltiples conceptos fundamentales en un sistema completo, funcional e interactivo.
 
