@@ -191,57 +191,58 @@ public class Interfaz {
                 System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.ROJO_BRILLANTE +
                                 "   X     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
                                 " Cruz      │   x2               " + Colores.VERDE + "║" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ╠════════════════════════════════════════╣" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ║" + Colores.RESET + "  Diagonal gana x1.5 extra           "
-                + Colores.VERDE + "║" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ║" + Colores.RESET + "  Múltiples líneas = premio × líneas  "
-                + Colores.VERDE + "║" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ║" + Colores.RESET + "   Apuesta 777 = Easter Egg activo!    "
-                + Colores.VERDE + "║" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ╚════════════════════════════════════════╝" + Colores.RESET);
-    }
+        System.out.println(Colores.VERDE + "  ╠══════════════════════════════════════════╣" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ║" + Colores.RESET + "  Diagonal gana x1.5 extra           "
+                                + Colores.VERDE + "     ║" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ║" + Colores.RESET + "  Múltiples líneas = premio × líneas  "
+                                + Colores.VERDE + "    ║" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ║" + Colores.RESET + "  Apuesta 777 = Easter Egg activo!     "
+                                + Colores.VERDE + "   ║" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ╚══════════════════════════════════════════╝" + Colores.RESET);
+        }
 
     // ─── Resultados de Juego ──────────────────────────────────────────────────
 
     public static void mostrarResultado(ResultadoJuego resultado, double apuesta) {
-        System.out.println();
-        if (!resultado.hayPremio()) {
-            System.out.println(Colores.ROJO + "  ╔════════════════════════════════════╗" + Colores.RESET);
-            System.out.println(Colores.ROJO + "  ║     ¡Sin suerte esta vez!         ║" + Colores.RESET);
-            System.out.printf(Colores.ROJO + "  ║   Perdiste: %-24s║%n" + Colores.RESET,
-                    "$" + String.format("%.2f", apuesta));
-            System.out.println(Colores.ROJO + "  ╚════════════════════════════════════╝" + Colores.RESET);
-        } else {
+                System.out.println();
+                if (!resultado.hayPremio()) {
+                        System.out.println(Colores.ROJO + "  ╔════════════════════════════════════╗" + Colores.RESET);
+                        System.out.println(Colores.ROJO + "  ║     ¡Sin suerte esta vez!          ║" + Colores.RESET);
+                        System.out.printf(Colores.ROJO + "  ║  Perdiste: %-24s║%n" + Colores.RESET,
+                                        "$" + String.format("%.2f", apuesta));
+                        System.out.println(Colores.ROJO + "  ╚════════════════════════════════════╝" + Colores.RESET);
+                } else {
             // ¡Ganaste!
             boolean esJackpot = resultado.getLineasGanadoras() >= 3;
-            String color = esJackpot ? Colores.AMARILLO_BRILLANTE + Colores.NEGRITA
-                    : Colores.VERDE_BRILLANTE + Colores.NEGRITA;
+                        String color = esJackpot ? Colores.AMARILLO_BRILLANTE + Colores.NEGRITA
+                                        : Colores.VERDE_BRILLANTE + Colores.NEGRITA;
 
-            System.out.println(color + "  ╔════════════════════════════════════╗" + Colores.RESET);
-            if (esJackpot) {
-                System.out.println(Colores.JACKPOT + "  ║     ¡¡MEGA JACKPOT!!        ║" + Colores.RESET);
-            } else {
-                System.out.println(color + "  ║    ¡¡GANASTE!!                   ║" + Colores.RESET);
-            }
-            System.out.println(color + "  ╠════════════════════════════════════╣" + Colores.RESET);
+                        System.out.println(color + "  ╔════════════════════════════════════╗" + Colores.RESET);
+                        if (esJackpot) {
+                                System.out.println(
+                                                Colores.JACKPOT + "  ║     ¡¡MEGA JACKPOT!!        ║" + Colores.RESET);
+                        } else {
+                                System.out.println(color + "  ║     ¡¡GANASTE!!                    ║" + Colores.RESET);
+                        }
+                        System.out.println(color + "  ╠════════════════════════════════════╣" + Colores.RESET);
 
-            for (ResultadoJuego.LineaGanadora linea : resultado.getLineas()) {
-                System.out.printf(color + "  ║   %-32s║%n" + Colores.RESET,
-                        linea.getTipo() + " [" + linea.getSimbolo() + "] x" +
-                                String.format("%.1f", linea.getMultiplicador()));
-            }
+                        for (ResultadoJuego.LineaGanadora linea : resultado.getLineas()) {
+                                System.out.printf(color + "  ║   %-32s ║%n" + Colores.RESET,
+                                                linea.getTipo() + " [" + linea.getSimbolo() + "] x" +
+                                                                String.format("%.1f", linea.getMultiplicador()));
+                        }
 
             if (resultado.getMultiplicadorTotal() > 1) {
-                System.out.printf(color + "  ║   Multiplicador combinado: x%-6s║%n" + Colores.RESET,
-                        resultado.getMultiplicadorTotal());
-            }
+                                System.out.printf(color + "  ║   Multiplicador combinado: x%-6s ║%n" + Colores.RESET,
+                                                resultado.getMultiplicadorTotal());
+                        }
 
-            System.out.println(color + "  ╠════════════════════════════════════╣" + Colores.RESET);
-            System.out.printf(color + "  ║   PREMIO TOTAL: %-18s║%n" + Colores.RESET,
-                    "$" + String.format("%.2f", resultado.getPremioTotal()));
-            System.out.println(color + "  ╚════════════════════════════════════╝" + Colores.RESET);
+                        System.out.println(color + "  ╠════════════════════════════════════╣" + Colores.RESET);
+                        System.out.printf(color + "  ║   PREMIO TOTAL: %-18s ║%n" + Colores.RESET,
+                                        "$" + String.format("%.2f", resultado.getPremioTotal()));
+                        System.out.println(color + "  ╚════════════════════════════════════╝" + Colores.RESET);
+                }
         }
-    }
 
     // ─── Easter Eggs ─────────────────────────────────────────────────────────
 
