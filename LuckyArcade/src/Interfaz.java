@@ -166,14 +166,14 @@ public class Interfaz {
     // ─── Tabla de Premios ─────────────────────────────────────────────────────
 
     public static void mostrarTablaPremios() {
-        System.out.println();
-        System.out.println(Colores.VERDE + "  ╔════════════════════════════════════════╗" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ║          TABLA DE PREMIOS            ║" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ╠════════════════════════════════════════╣" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ║" + Colores.RESET + " Símbolo │ Nombre    │ Multiplicador   "
-                + Colores.VERDE + "║" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ╠═════════╪══════════╪═════════════════╣" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.AMARILLO_BRILLANTE + Colores.NEGRITA +
+                System.out.println();
+                System.out.println(Colores.VERDE + "  ╔══════════════════════════════════════════╗" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ║          TABLA DE PREMIOS                ║" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ╠══════════════════════════════════════════╣" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ║" + Colores.RESET + " Símbolo │ Nombre    │ Multiplicador   "
+                                + Colores.VERDE + "   ║" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ╠═════════╪═══════════╪════════════════════╣" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.AMARILLO_BRILLANTE + Colores.NEGRITA+
                 "   7     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
                 " Jackpot  │    x10  (¡MÁXIMO!)  " + Colores.VERDE + "║" + Colores.RESET);
         System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.VERDE_BRILLANTE +
