@@ -175,22 +175,22 @@ public class Interfaz {
                 System.out.println(Colores.VERDE + "  ╠═════════╪═══════════╪════════════════════╣" + Colores.RESET);
                 System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.AMARILLO_BRILLANTE + Colores.NEGRITA+
                 "   7     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
-                " Jackpot  │    x10  (¡MÁXIMO!)  " + Colores.VERDE + "║" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.VERDE_BRILLANTE +
-                "   $     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
-                " Dinero   │    x5               " + Colores.VERDE + "║" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.MAGENTA_BRILLANTE +
-                "   @     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
-                " Arroba   │    x4               " + Colores.VERDE + "║" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.CIAN_BRILLANTE +
-                "   *     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
-                " Estrella │    x3               " + Colores.VERDE + "║" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.AZUL_BRILLANTE +
-                "   #     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
-                " Hash     │    x2.5             " + Colores.VERDE + "║" + Colores.RESET);
-        System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.ROJO_BRILLANTE +
-                "   X     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
-                " Cruz     │    x2               " + Colores.VERDE + "║" + Colores.RESET);
+                                " Jackpot   │   x10  (¡MÁXIMO!)  " + Colores.VERDE + "║" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.VERDE_BRILLANTE +
+                                "   $     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
+                                " Dinero    │   x5               " + Colores.VERDE + "║" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.MAGENTA_BRILLANTE +
+                                "   @     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
+                                " Arroba    │   x4               " + Colores.VERDE + "║" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.CIAN_BRILLANTE +
+                                "   *     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
+                                " Estrella  │   x3               " + Colores.VERDE + "║" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.AZUL_BRILLANTE +
+                                "   #     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
+                                " Hash      │   x2.5             " + Colores.VERDE + "║" + Colores.RESET);
+                System.out.println(Colores.VERDE + "  ║" + Colores.RESET + Colores.ROJO_BRILLANTE +
+                                "   X     " + Colores.RESET + Colores.VERDE + "│" + Colores.RESET +
+                                " Cruz      │   x2               " + Colores.VERDE + "║" + Colores.RESET);
         System.out.println(Colores.VERDE + "  ╠════════════════════════════════════════╣" + Colores.RESET);
         System.out.println(Colores.VERDE + "  ║" + Colores.RESET + "  Diagonal gana x1.5 extra           "
                 + Colores.VERDE + "║" + Colores.RESET);
