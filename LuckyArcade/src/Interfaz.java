@@ -87,28 +87,36 @@ public class Interfaz {
     // ─── Estadísticas del Jugador ─────────────────────────────────────────────
 
     public static void mostrarEstadisticas(Jugador jugador) {
-        System.out.println();
-        System.out.println(Colores.CIAN + "  ╔═══════════════════════════════════════╗" + Colores.RESET);
-        System.out.println(Colores.CIAN + "  ║        TUS ESTADÍSTICAS              ║" + Colores.RESET);
-        System.out.println(Colores.CIAN + "  ╠═══════════════════════════════════════╣" + Colores.RESET);
-        System.out.printf(Colores.CIAN + "  ║" + Colores.RESET + "   Jugador:        %-20s" + Colores.CIAN + "║%n"
-                + Colores.RESET, jugador.getNombre());
-        System.out.printf(Colores.CIAN + "  ║" + Colores.RESET + "  Saldo actual:   " + Colores.VERDE_BRILLANTE
-                + "%-20s" + Colores.CIAN + "║%n" + Colores.RESET, "$" + String.format("%.2f", jugador.getSaldo()));
-        System.out.printf(Colores.CIAN + "  ║" + Colores.RESET + "   Partidas:       %-20s" + Colores.CIAN + "║%n"
-                + Colores.RESET, jugador.getPartidasJugadas());
-        System.out.printf(Colores.CIAN + "  ║" + Colores.RESET + "   Ganadas:        %-20s" + Colores.CIAN + "║%n"
-                + Colores.RESET, jugador.getPartidasGanadas());
-        System.out.printf(
-                Colores.CIAN + "  ║" + Colores.RESET + "   Tasa de éxito:  %-20s" + Colores.CIAN + "║%n"
-                        + Colores.RESET,
-                String.format("%.1f%%", jugador.getPorcentajeVictorias()));
-        System.out.printf(
-                Colores.CIAN + "  ║" + Colores.RESET + "   Mayor ganancia: " + Colores.AMARILLO_BRILLANTE + "%-20s"
-                        + Colores.CIAN + "║%n" + Colores.RESET,
-                "$" + String.format("%.2f", jugador.getMayorGanancia()));
-        System.out.println(Colores.CIAN + "  ╚═══════════════════════════════════════╝" + Colores.RESET);
-    }
+                System.out.println();
+                System.out.println(Colores.CIAN + "  ╔═══════════════════════════════════════╗" + Colores.RESET);
+                System.out.println(Colores.CIAN + "  ║        TUS ESTADÍSTICAS               ║" + Colores.RESET);
+                System.out.println(Colores.CIAN + "  ╠═══════════════════════════════════════╣" + Colores.RESET);
+                System.out.printf(
+                                Colores.CIAN + "  ║" + Colores.RESET + "   Jugador:        %-20s" + Colores.CIAN + "║%n"
+                                                + Colores.RESET,
+                                jugador.getNombre());
+                System.out.printf(Colores.CIAN + "  ║" + Colores.RESET + "  Saldo actual:   " + Colores.VERDE_BRILLANTE
+                                + "%-20s" + Colores.CIAN + " ║%n" + Colores.RESET,
+                                "$" + String.format("%.2f", jugador.getSaldo()));
+                System.out.printf(
+                                Colores.CIAN + "  ║" + Colores.RESET + "   Partidas:       %-20s" + Colores.CIAN + "║%n"
+                                                + Colores.RESET,
+                                jugador.getPartidasJugadas());
+                System.out.printf(
+                                Colores.CIAN + "  ║" + Colores.RESET + "   Ganadas:        %-20s" + Colores.CIAN + "║%n"
+                                                + Colores.RESET,
+                                jugador.getPartidasGanadas());
+                System.out.printf(
+                                Colores.CIAN + "  ║" + Colores.RESET + "   Tasa de éxito:  %-20s" + Colores.CIAN + "║%n"
+                                                + Colores.RESET,
+                                String.format("%.1f%%", jugador.getPorcentajeVictorias()));
+                System.out.printf(
+                                Colores.CIAN + "  ║" + Colores.RESET + "   Mayor ganancia: "
+                                                + Colores.AMARILLO_BRILLANTE + "%-20s"
+                                                + Colores.CIAN + "║%n" + Colores.RESET,
+                                "$" + String.format("%.2f", jugador.getMayorGanancia()));
+                System.out.println(Colores.CIAN + "  ╚═══════════════════════════════════════╝" + Colores.RESET);
+        }
 
     // ─── Ranking ──────────────────────────────────────────────────────────────
 
