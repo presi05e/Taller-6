@@ -57,17 +57,18 @@ public class Interfaz {
                                                 + Colores.RESET,
                                 jugador.getNombre());
         System.out.printf(
-                Colores.AMARILLO + "  ║" + Colores.RESET + "   Saldo:   " + Colores.VERDE_BRILLANTE + "%-22s"
-                        + Colores.AMARILLO + "║%n" + Colores.RESET,
-                "$" + String.format("%.2f", jugador.getSaldo()));
+                                Colores.AMARILLO + "  ║" + Colores.RESET + "   Saldo:   " + Colores.VERDE_BRILLANTE
+                                                + "%-22s"
+                                                + Colores.AMARILLO + "  ║%n" + Colores.RESET,
+                                "$" + String.format("%.2f", jugador.getSaldo()));
 
-        if (jugador.getTurnosBono() > 0) {
-            System.out.printf(
-                    Colores.AMARILLO + "  ║" + Colores.RESET + "   Bonos:   " + Colores.MAGENTA_BRILLANTE + "%-22s"
-                            + Colores.AMARILLO + "║%n" + Colores.RESET,
-                    jugador.getTurnosBono() + " turno(s) activo(s)");
-        }
-
+                if (jugador.getTurnosBono() > 0) {
+                        System.out.printf(
+                                        Colores.AMARILLO + "  ║" + Colores.RESET + "   Bonos:   "
+                                                        + Colores.MAGENTA_BRILLANTE + "%-22s"
+                                                        + Colores.AMARILLO + "║%n" + Colores.RESET,
+                                        jugador.getTurnosBono() + " turno(s) activo(s)");
+                }
         System.out.println(Colores.AMARILLO + "  ╠════════════════════════════════════╣" + Colores.RESET);
         System.out.println(Colores.AMARILLO + "  ║" + Colores.RESET + "  1 Apostar                         "
                 + Colores.AMARILLO + "║" + Colores.RESET);
